@@ -1,8 +1,4 @@
 # AFP_visioflix
 
 
-<img
-  src="/Desktop/visioflixAccueil.png"
-  alt="Alt text"
-  title="Screen Landing Page"
-  style="display: inline-block; margin: 0 auto; max-width: 300px">
+![visioflixAccueil](https://github.com/NeyyTe/AFP_visioflix/assets/105863283/ae854415-0388-4a89-b6bc-d9066fab2d08 )
