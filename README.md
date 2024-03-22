@@ -1,4 +1,8 @@
 # AFP_visioflix
 
 
-/Users/apprenant73/Desktop/visioflixAccueil.png
+<img
+  src="/Desktop/visioflixAccueil.png"
+  alt="Alt text"
+  title="Screen Landing Page"
+  style="display: inline-block; margin: 0 auto; max-width: 300px">
