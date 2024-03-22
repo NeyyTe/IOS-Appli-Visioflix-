@@ -16,7 +16,8 @@
 		47C96E2D2BA72265005754C4 /* CinemaDetailsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C96E2C2BA72265005754C4 /* CinemaDetailsViews.swift */; };
 		47C96E2F2BA7226F005754C4 /* MapsViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C96E2E2BA7226F005754C4 /* MapsViews.swift */; };
 		47C96E312BA722FD005754C4 /* ModelMovie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C96E302BA722FD005754C4 /* ModelMovie.swift */; };
-		639DF0612BA2FC5100B81F78 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639DF0602BA2FC5100B81F78 /* Test.swift */; };
+		47C96E452BAAD0EE005754C4 /* Preferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C96E442BAAD0EE005754C4 /* Preferences.swift */; };
+		47C96E472BAAF933005754C4 /* MovieRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47C96E462BAAF933005754C4 /* MovieRow.swift */; };
 		639DF0652BA2FCCE00B81F78 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639DF0642BA2FCCE00B81F78 /* Settings.swift */; };
 		639DF0672BA2FCE400B81F78 /* FAQAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639DF0662BA2FCE400B81F78 /* FAQAnswer.swift */; };
 		639DF0692BA2FCE900B81F78 /* FAQ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639DF0682BA2FCE900B81F78 /* FAQ.swift */; };
@@ -49,7 +50,8 @@
 		47C96E2C2BA72265005754C4 /* CinemaDetailsViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CinemaDetailsViews.swift; sourceTree = "<group>"; };
 		47C96E2E2BA7226F005754C4 /* MapsViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapsViews.swift; sourceTree = "<group>"; };
 		47C96E302BA722FD005754C4 /* ModelMovie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMovie.swift; sourceTree = "<group>"; };
-		639DF0602BA2FC5100B81F78 /* Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
+		47C96E442BAAD0EE005754C4 /* Preferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Preferences.swift; sourceTree = "<group>"; };
+		47C96E462BAAF933005754C4 /* MovieRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRow.swift; sourceTree = "<group>"; };
 		639DF0642BA2FCCE00B81F78 /* Settings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		639DF0662BA2FCE400B81F78 /* FAQAnswer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQAnswer.swift; sourceTree = "<group>"; };
 		639DF0682BA2FCE900B81F78 /* FAQ.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAQ.swift; sourceTree = "<group>"; };
@@ -85,7 +87,6 @@
 		477079182BA046A4001B33F4 = {
 			isa = PBXGroup;
 			children = (
-				830A327D2BA43E2A00FE345F /* Components */,
 				477079232BA046A4001B33F4 /* Visioflix */,
 				477079222BA046A4001B33F4 /* Products */,
 			);
@@ -102,10 +103,11 @@
 		477079232BA046A4001B33F4 /* Visioflix */ = {
 			isa = PBXGroup;
 			children = (
-				834998452BA983200013C77A /* ContentView.swift */,
 				477079242BA046A4001B33F4 /* VisioflixApp.swift */,
-				477079392BA04A79001B33F4 /* Data */,
+				834998452BA983200013C77A /* ContentView.swift */,
 				477079342BA04969001B33F4 /* Screens */,
+				830A327D2BA43E2A00FE345F /* Components */,
+				477079392BA04A79001B33F4 /* Data */,
 				477079282BA046A6001B33F4 /* Assets.xcassets */,
 				4770792A2BA046A6001B33F4 /* Preview Content */,
 			);
@@ -147,6 +149,7 @@
 		830A327D2BA43E2A00FE345F /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				47C96E462BAAF933005754C4 /* MovieRow.swift */,
 				830A327E2BA43E5C00FE345F /* YoutubePlayer.swift */,
 				834998432BA982A70013C77A /* CarouselView.swift */,
 			);
@@ -161,7 +164,7 @@
 				639DF0662BA2FCE400B81F78 /* FAQAnswer.swift */,
 				639DF06A2BA2FCF400B81F78 /* ProfilView.swift */,
 				639DF0642BA2FCCE00B81F78 /* Settings.swift */,
-				639DF0602BA2FC5100B81F78 /* Test.swift */,
+				47C96E442BAAD0EE005754C4 /* Preferences.swift */,
 				830A32872BA49DE800FE345F /* Friends.swift */,
 			);
 			path = profilView;
@@ -340,11 +343,12 @@
 				639DF0692BA2FCE900B81F78 /* FAQ.swift in Sources */,
 				47C96E2B2BA721BC005754C4 /* DataMovies.swift in Sources */,
 				830A32942BA82AB800FE345F /* ModelFriends.swift in Sources */,
-				639DF0612BA2FC5100B81F78 /* Test.swift in Sources */,
 				830A32762BA2F4C100FE345F /* LandingPage.swift in Sources */,
+				47C96E452BAAD0EE005754C4 /* Preferences.swift in Sources */,
 				830A328F2BA79A7600FE345F /* ModelFaq.swift in Sources */,
 				830A327F2BA43E5C00FE345F /* YoutubePlayer.swift in Sources */,
 				47C96E132BA1E21D005754C4 /* ModelMaps.swift in Sources */,
+				47C96E472BAAF933005754C4 /* MovieRow.swift in Sources */,
 				477079252BA046A4001B33F4 /* VisioflixApp.swift in Sources */,
 				830A32712BA1FE3D00FE345F /* ListMoviesDetails.swift in Sources */,
 			);

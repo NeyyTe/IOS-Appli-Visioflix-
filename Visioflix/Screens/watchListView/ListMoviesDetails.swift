@@ -12,8 +12,10 @@ import UIKit
 
 
 struct ListMoviesDetails: View {
-    let movie : ListMovies
+//    let movie : ListMovies
+    @ObservedObject var movie: ListMovies
     @Environment(\.dismiss) var dismiss
+    @State private var showAddedMessage = false
     
     
     var body: some View {
@@ -24,14 +26,55 @@ struct ListMoviesDetails: View {
  //          ---------------------------------------------------------
             
             ScrollView{
-                
                 VStack{
-                    Image(movie.image)
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width : 250)
-                        .cornerRadius(20)
+                    HStack{
+                        Spacer()
+                        // Toggle coeur pour favoris
+                        Button(action: {
+                            movie.isFavorite.toggle()
+            
+                            // Afficher l'overlay uniquement si le cœur est vide
+                            if movie.isFavorite {
+                                showAddedMessage = true
+            
+                                // Masquer l'overlay après 2 secondes
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+                                    withAnimation {
+                                        showAddedMessage = false
+                                     }
+                                 }
+                             }
+                         }) {
+                             Image(systemName: movie.isFavorite ? "heart.fill" : "heart")
+                                 .resizable()
+                                 .scaledToFit()
+                                 .frame(width: 30)
+                                 .foregroundColor(.yellow)
+                                 .overlay(
+                                     // Overlay pour afficher "Ajouté aux favoris"
+                                     Group {
+                                         if showAddedMessage {
+                                             Text("Ajouté aux favoris")
+                                                 .foregroundColor(.white)
+                                                 .padding()
+                                                 .background(.black)
+                                                 .cornerRadius(8)
+                                                 .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: -500))
+                                            
+                                         }
+                                     }
+                                 )
+                         }
+                         .padding(.trailing,30)
+                    }
+                        Image(movie.image)
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width : 250)
+                            .cornerRadius(20)
                         .shadow(color: Color.black.opacity(0.7), radius: 7, x: 0, y: 0)
+                    
+
                     
                     Text(movie.title)
                         .font(
@@ -43,6 +86,7 @@ struct ListMoviesDetails: View {
                         .padding(.bottom)
                         .foregroundStyle(.yellow)
                         .padding(.horizontal,10)
+
                 }
                 
 //          ---------------------------------------------------------

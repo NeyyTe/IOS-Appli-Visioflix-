@@ -24,7 +24,6 @@ struct LandingPage: View {
                         .edgesIgnoringSafeArea(.top)
                     
                     VStack{
-                        
                         Text("VisioFlix")
                             .font(
                                 .custom(
@@ -39,11 +38,8 @@ struct LandingPage: View {
                             .fontWeight(.bold)
                         +
                         Text(" correspond")
-                        
                             .bold()
-                        
                         NavigationLink(destination: FilmsRandom(), label: {
-                            
                             HStack {
                                 Text("Match")
                                     .bold()
@@ -58,18 +54,29 @@ struct LandingPage: View {
                             .padding(.top,30)
                             
                         })
+
+               
+                            
+                        VStack {
+                            
+                            HStack {
+                                Text("Les suggestions")
+                                    .font(.title2)
+                                    .padding(.top)
+                                    .padding(.leading)
+                                Spacer()
+                            }
                         
-                        CarouselView()
-                          
-                    }
+                        }
+                            CarouselView()
+                            .padding(.bottom, 60)
+                        }
                 }
                 .foregroundColor(.white)
                 .font(.system(size: 22))
                 .navigationBarTitle("Match")
                 .navigationBarHidden(true)
             }
-            
-            
         
         }
         

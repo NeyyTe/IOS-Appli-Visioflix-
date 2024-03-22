@@ -11,6 +11,7 @@ import SwiftUI
 
 struct FAQAnswer: View {
     var reponse: String
+    
     var body: some View {
         HStack{
             Spacer()

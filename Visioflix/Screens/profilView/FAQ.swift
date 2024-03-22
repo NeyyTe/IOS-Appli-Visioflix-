@@ -50,7 +50,7 @@ struct FAQ: View {
                             .background(Color.gray.opacity(0.2))
                             .cornerRadius(10)
                         }
-                        .padding(.vertical,5)
+                        .padding()
                     }
                     
                     .navigationBarTitle("FAQ")

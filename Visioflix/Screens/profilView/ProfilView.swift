@@ -11,7 +11,6 @@ struct ProfilView: View {
         
         NavigationStack {
             ZStack{
-                
                 colorBackground
                     .edgesIgnoringSafeArea(.top)
                 
@@ -39,7 +38,22 @@ struct ProfilView: View {
                     .foregroundColor(.white)
                     
                     //          ---------------------------------------------------------
-                    
+                    NavigationLink(destination: Preferences(), label: {
+                        HStack{
+                            Image(systemName: "slider.vertical.3")
+                                .font(.system(size: 27))
+                                .foregroundColor(.yellow)
+                                .padding(.trailing, 10)
+                            Text("Mes préférences")
+                                .font(.system(size: 27))
+                            Spacer()
+                            
+                            Image(systemName: "arrow.right.circle.fill")
+                        }
+                    })
+                    .padding(37)
+                    .foregroundColor(.white)
+                    //          ---------------------------------------------------------
                     NavigationLink(destination: Favoris(), label: {
                         HStack{
                             Image(systemName: "star.circle.fill")
@@ -109,6 +123,8 @@ struct ProfilView: View {
                     })
                     .padding(37)
                     .foregroundColor(.white)
+                    //          ---------------------------------------------------------
+
                     Spacer()
                     VStack{
                         HStack{
@@ -126,8 +142,6 @@ struct ProfilView: View {
                     .foregroundColor(.white)
                 }
                     .navigationBarHidden(true)
-                
-                
             }
     
         }

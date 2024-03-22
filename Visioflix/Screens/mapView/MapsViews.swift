@@ -18,7 +18,6 @@ struct MapsViews: View {
 //    )
 //    )
     
-    
 //    Position de la caméra sur la carte
     @State var region : MapCameraPosition = .automatic
 //    Contrôle l'affichage de la modal
@@ -27,6 +26,8 @@ struct MapsViews: View {
     @State var selectedCinema: Cinema?
 //    Le texte entré par l'utilisateur lors de la recherche
     @State var searchText : String = ""
+    
+    
 
     var body: some View {
         NavigationStack{
@@ -63,6 +64,7 @@ struct MapsViews: View {
                     .background(.white)
                     .padding()
                     .shadow(radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+
                
             }
             

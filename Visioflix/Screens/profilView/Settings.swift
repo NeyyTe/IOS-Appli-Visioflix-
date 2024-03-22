@@ -62,7 +62,7 @@ struct Settings: View {
                     .padding()
                     .foregroundColor(.white)
 //          ---------------------------------------------------------
-                    
+            
                     // Choix de la langue
                     HStack {
                         Text("Langue")
@@ -76,6 +76,7 @@ struct Settings: View {
                         }
                         .pickerStyle(DefaultPickerStyle()) // Ici style du picker ( Add or delete pour changer de style )
                         .foregroundColor(.white) 
+                        .accentColor(.white)
                     }
                    
                     .padding()
@@ -104,8 +105,3 @@ struct Settings: View {
 #Preview {
     Settings()
 }
-
-
-    #Preview {
-        Settings()
-    }

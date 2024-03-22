@@ -23,8 +23,7 @@ var listMovies = [
         rating : "⭐️⭐️⭐️⭐️☆",
         comments : 278,
         plateform: ["Netflix","Paramount"],
-        url:"https://www.youtube.com/watch?v=tGpTpVyI_OQ",
-        isFavorite: false
+        url:"https://www.youtube.com/watch?v=tGpTpVyI_OQ"
         
     ),ListMovies(
         title: "Inception",
@@ -165,20 +164,4 @@ var listMovies = [
             plateform: ["Prime vidéo"],
             url:"https://www.youtube.com/watch?v=yRwGoS-KPVE"
         )
-    
-    ,ListMovies(
-        title: "Mr Robot",
-        duration: "55",
-        synopsis: "Elliot Alderson est un jeune informaticien vivant à New York, qui travaille en tant qu'ingénieur en sécurité informatique pour Allsafe Security. Il lutte constamment contre la dépression et son processus de pensée semble fortement influencé par la paranoïa. Il pirate les comptes des gens, ce qui le conduit souvent à agir comme un cyber-justicier. Elliot rencontre « Mr. Robot », un mystérieux anarchiste qui souhaite le recruter dans son groupe de hackers connu sous le nom de « Fsociety ». Leur objectif consiste à rétablir l'équilibre de la société par la destruction des infrastructures des plus grosses banques et entreprises du monde, notamment le conglomérat E Corp. (surnommé « Evil Corp. » par Elliot) qui, comme client, par ailleurs, représente 80 % du chiffre d'affaires d’Allsafe Security.",
-        actors: ["Rami Malek   : Elliot Alderson","Carly Chaikin : Darlene Alderson","Portia Doubleday  : Angela Moss","Martin Wallström   : Tyrell Wellick ","Christian Slater : « Mr. Robot »","Michael Cristofer  : Phillip Price"],
-        image: "mrRobotImage",
-        type: "Série",
-        genre: ["Thriller psychologique","Dramatique"],
-        year: 2019,
-        realisateur: "Sam Esmail",
-        rating : "⭐️⭐️⭐️⭐️⭐️",
-        comments : 277,
-        plateform: ["Prime vidéo","Netflix"],
-        url:"https://www.youtube.com/watch?v=uml6bz9ygxA"
-    )
 ]
